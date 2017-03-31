@@ -1,97 +1,97 @@
 #Objects in R
 
 #Single values are treated as vectors
-> 5
+5
 [1] 5
-> "Hello"
+"Hello"
 [1] "Hello"
-> TRUE
+TRUE
 [1] TRUE
 #creating a variable with single value
-> x=5
+x=5
 # a single variable is stored as a vector of length 1
-> x
+x
 [1] 5
-> x[1]
+x[1]
 [1] 5
-> class(x)
+class(x)
 [1] "numeric"
 #check class of an Object using class() function
-> numericVector<-rep(1,10)
-> numericVector
+numericVector<-rep(1,10)
+numericVector
  [1] 1 1 1 1 1 1 1 1 1 1
-> class(numericVector)
+class(numericVector)
 [1] "numeric"
 
 #Creating numeric vector using c() function
-> numericVector<-c(1,2,3)
-> numericVector
+numericVector<-c(1,2,3)
+numericVector
 [1] 1 2 3
 
 #Creating a character vector using c() function
-> characterVector<-c("abc","def","xyz")
-> characterVector
+characterVector<-c("abc","def","xyz")
+characterVector
 [1] "abc" "def" "xyz"
 
 #Creating a logical vector
-> logicalVecor<-c(TRUE,FALSE,FALSE)
-> logicalVecor
+logicalVecor<-c(TRUE,FALSE,FALSE)
+logicalVecor
 [1]  TRUE FALSE FALSE
-> logicalVecor1<-c(T,F,F)
-> logicalVecor1
+logicalVecor1<-c(T,F,F)
+logicalVecor1
 [1]  TRUE FALSE FALSE
 
 #count number of TRUE in a logical vector
-> sum(logicalVecor1)
+sum(logicalVecor1)
 [1] 1
 
 #Creating a vector dynamically
-> characterVector<-vector(mode = "character")
-> characterVector
+characterVector<-vector(mode = "character")
+characterVector
 character(0)
-> characterVector<-c(characterVector,"xyz")
-> characterVector
+characterVector<-c(characterVector,"xyz")
+characterVector
 [1] "xyz"
-> characterVector<-c(characterVector,"abc")
-> characterVector
+characterVector<-c(characterVector,"abc")
+characterVector
 [1] "xyz" "abc"
-> characterVector<-c(characterVector,"def")
-> characterVector
+characterVector<-c(characterVector,"def")
+characterVector
 [1] "xyz" "abc" "def"
 
 #Creating vector using rep() function
-> numericVector<-rep(1,10)
-> numericVector
+numericVector<-rep(1,10)
+numericVector
  [1] 1 1 1 1 1 1 1 1 1 1
 
 #creating vector using seq() function
-> numericVector<-seq(2,100,2)
-> numericVector
+numericVector<-seq(2,100,2)
+numericVector
  [1]   2   4   6   8  10  12  14  16  18  20  22  24  26  28  30  32  34  36  38  40  42  44  46  48  50  52  54  56
 [29]  58  60  62  64  66  68  70  72  74  76  78  80  82  84  86  88  90  92  94  96  98 100
 
 #creating vector using : operator
-> numericVector<-(1:5)
-> numericVector
+numericVector<-(1:5)
+numericVector
 [1] 1 2 3 4 5
 
 #combining different functions to create a numeric vector
-> numericVector<-c(1,2,rep(0,10),seq(1,5,1),15:25)
-> numericVector
+numericVector<-c(1,2,rep(0,10),seq(1,5,1),15:25)
+numericVector
  [1]  1  2  0  0  0  0  0  0  0  0  0  0  1  2  3  4  5 15 16 17 18 19 20 21 22 23 24 25
 
 #repeating a smaller vector- benefits
-> x<-seq(1,10)
-> x
+x<-seq(1,10)
+x
  [1]  1  2  3  4  5  6  7  8  9 10
-> c<-1
-> c
+c<-1
+c
 [1] 1
-> m<-1
-> m
+m<-1
+m
 [1] 1
-> y<-m*x+c
-> y
+y<-m*x+c
+y
 [1]  2  3  4  5  6  7  8  9 10 11
 
 #issues with smaller vector - challenges
