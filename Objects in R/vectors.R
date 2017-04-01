@@ -95,93 +95,93 @@ y
 [1]  2  3  4  5  6  7  8  9 10 11
 
 #issues with smaller vector - challenges
-> x<-seq(1,10)
-> x
+x<-seq(1,10)
+x
  [1]  1  2  3  4  5  6  7  8  9 10
-> c<-seq(1,9)
-> c
+c<-seq(1,9)
+c
 [1] 1 2 3 4 5 6 7 8 9
-> m<-1
-> m
+m<-1
+m
 [1] 1
-> y<-m*x+c
+y<-m*x+c
 Warning message:
 In m * x + c :
   longer object length is not a multiple of shorter object length
-> y
+ y
  [1]  2  4  6  8 10 12 14 16 18 11
 
 # Vector addition
-> vector1=rep(10,10)
-> vector1
+  vector1=rep(10,10)
+  vector1
  [1] 10 10 10 10 10 10 10 10 10 10
-> vector2=rep(20,10)
-> vector2
+  vector2=rep(20,10)
+  vector2
  [1] 20 20 20 20 20 20 20 20 20 20
-> vector1+vector2
+ vector1+vector2
  [1] 30 30 30 30 30 30 30 30 30 30
 
  # Vector multiplication
-> vector1*vector2
+ vector1*vector2
  [1] 200 200 200 200 200 200 200 200 200 200
 
 # Vector division
-> vector1/vector2
+  vector1/vector2
  [1] 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5
 
 #substraction
-> vector1-vector2
+  vector1-vector2
  [1] -10 -10 -10 -10 -10 -10 -10 -10 -10 -10
 
 #accessing an element in a vector
-> x<-c(1,2,3,4,5,9)
-> x[4]
+ x<-c(1,2,3,4,5,9)
+ x[4]
 [1] 4
 
 #indexing a vector
-> x
+  x
  [1]  1  2  3  4  5  6  7  8  9 10
-> x==3
+  x==3
  [1] FALSE FALSE  TRUE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
 
 #any() and all() function
-> any(x==3)
+ any(x==3)
 [1] TRUE
 
-> all(x==3)
+ all(x==3)
 [1] FALSE
 
-> x<-c(4,7,9,10,15)
+ x<-c(4,7,9,10,15)
 #get index of a number
-> which(x==9)
+ which(x==9)
 [1] 3
 
-> x<-c(8,9,9,10,100)
-> x
+ x<-c(8,9,9,10,100)
+ x
 [1]   8   9   9  10 100
 #search and replace
-> x[x==9]<-17
-> x
+ x[x==9]<-17
+ x
 [1]   8  17  17  10 100
-> 
+ 
 
-> x
+ x
 [1]   8  17  17  10 100
-> x>10
+ x>10
 [1] FALSE  TRUE  TRUE FALSE  TRUE
-> which(x>10)
+ which(x>10)
 [1] 2 3 5
-> any(x>10)
+ any(x>10)
 [1] TRUE
-> all(x>10)
+ all(x>10)
 [1] FALSE
-> sum(x>10)
+ sum(x>10)
 [1] 3
-> 
+ 
 
 #complex numbers
-> xx<-1+2i
-> xx*xx
+ xx<-1+2i
+ xx*xx
 [1] -3+4i
 
 
