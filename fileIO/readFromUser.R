@@ -1,4 +1,4 @@
-> x=readline(prompt = 'Type any number:')
+ x=readline(prompt = 'Type any number:')
 Type any number:10
-> print(x)
+ print(x)
 [1] "10"
