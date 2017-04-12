@@ -1,5 +1,5 @@
 #Example of loop 
-> for(i in 1:5)
+ for(i in 1:5)
 + {
 +   print(i)
 + }
@@ -11,7 +11,7 @@
 
 
 #break in a loop
-> for(i in 1:5)
+ for(i in 1:5)
 + {
 +   if(i==3)
 +   {
@@ -23,7 +23,7 @@
 [1] 2
 
 #continue statement in R is called 'next'
-> for(i in 1:5)
+ for(i in 1:5)
 + {
 +   if(i==3)
 +   {
